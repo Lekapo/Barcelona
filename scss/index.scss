@@ -79,7 +79,6 @@ button {
 }
 
 /*  SEARCH FORM OVERLAY */
-
 /* The overlay effect with black background */
 .search-overlay {
     height: 100px;
@@ -187,11 +186,17 @@ button {
 
     font-family: Futura,'Montserrat','Arial',sans-serif;
     opacity: 0;
-    
+
+
+        
+    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.66) 33%, rgba(0,0,0,0.33) 66%, rgba(0,0,0,0) 100%);
+
+    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.66) 33%, rgba(0,0,0,0.33) 66%, rgba(0,0,0,0) 100%);
+
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.66) 33%, rgba(0,0,0,0.33) 66%, rgba(0,0,0,0) 100%);
+
+
     &-dark {
-
-        background-color: rgba(0, 0, 0, 0);
-
 
         html:not([data-scroll='0']) & {
         background-color: rgba(0,0,0,1) !important;
@@ -292,8 +297,8 @@ button {
                 &:before {
                     left: 0;
                     top: 0;
-                    border-left: 4px solid #c0392b;
-                    border-top: 4px solid #c0392b;
+                    border-left: 2px solid #c0392b;
+                    border-top: 2px solid #c0392b;
                     -webkit-transform: translate(100%, 50%);
                     transform: translate(100%, 50%);
                 }
@@ -301,8 +306,8 @@ button {
                 &:after {
                     right: 0;
                     bottom: 0;
-                    border-right: 4px solid #c0392b;
-                    border-bottom: 4px solid #c0392b;
+                    border-right: 2px solid #c0392b;
+                    border-bottom: 2px solid #c0392b;
                     -webkit-transform: translate(-100%, -50%);
                     transform: translate(-100%, -50%);
                 }
@@ -395,7 +400,7 @@ button {
 //HERO
 .hero {
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("images/background.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("../images/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-size: 1920px 1080px;
@@ -699,7 +704,149 @@ footer {
 
 }
 
-	
+@media only screen and ( min-width: 768px ) {
+    
+    // NAVBAR
+.navbar {
+
+    &-dark {
+        html:not([data-scroll = '0']) & {
+
+
+            background: rgba(0,0,0, .8) !important;
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+
+            box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.66 );
+    
+            box-shadow: 0 0 .5em rgba(0, 0, 0, .5);
+    
+            transition: all 0.5s linear;
+        }
+    }
+
+    .logo-area {
+
+        .navbar-brand {
+            padding: 0;
+            img {
+                height: 80px;
+                margin-left: 4em;
+
+                transition: all 0.5s linear;
+
+                html:not([data-scroll='0']) & {
+                    height: 50px;
+                    transition: all 0.5s linear;
+                }
+            }
+        }
+    }
+
+    &-collapse {
+        background-color: rgba(0, 0, 0, 0);
+        position:relative;
+        min-height: 0;
+        width: 100%;
+        right: 0;
+        padding: 0;
+        margin-bottom: 0;
+        transition: all 0.3s ease;
+        display: block;
+        overflow-y: hidden;
+        z-index: 1050;
+
+
+        a {
+        }
+        
+        .navbar-nav {
+            margin: 0;
+            .active {
+                .nav-link {
+
+                    &::before,
+                    &::after {
+                    }
+                }
+            }
+            
+            .nav-link {
+
+                font-size: 14px;
+                * {
+                }
+
+                li {
+                }
+
+                &:before,
+                &:after {
+                }
+
+                &:before {
+                }
+
+                &:after {
+                }
+                
+                &:hover  {
+                    &:before,
+                    &:after {
+
+                    }
+                }
+            }
+
+            .dropdown-menu {
+                
+
+                &.show {
+                }
+            }
+        }
+
+        .mobile-nav-social {
+
+            margin-bottom: 0;
+            .nav-icon {
+                svg {
+                }
+
+                &:hover {
+                    path {
+                    }
+                }
+
+            }
+        }
+
+        .nav-language {
+            font-size: 14px;
+            span { 
+
+                &:hover {
+                }
+            }
+
+            &:hover {
+
+                path {
+                }
+            }
+        }
+
+        &.collapsing {
+
+        }
+
+        &.show {
+        }
+    }
+
+}
+
+}
 
 /* clears the 'X' from Internet Explorer */
 input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }

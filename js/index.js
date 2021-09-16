@@ -40,9 +40,14 @@ storeScroll();
 
 $(document).ready(function(){
 
-    // document.getElementById('SearchIcon').addEventListener('click', function(){
-    //     $("#searchOverlay").css({ top: '0px' })
-    // });
+    
+    document.getElementById('searchIcon').addEventListener('click', function(){
+
+
+        $("#searchOverlay").css({ top: '0px' })
+
+
+    });
 
     document.getElementById('mobileSearchIcon').addEventListener('click', function(){
 
