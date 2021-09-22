@@ -278,14 +278,14 @@ html:not([data-scroll="0"]) .navbar-dark {
   max-height: 800px;
   visibility: visible;
 }
-.navbar-collapse .mobile-nav-social {
+.navbar-collapse .nav-social {
   margin-bottom: 1em;
   margin-left: 10px;
 }
-.navbar-collapse .mobile-nav-social .nav-icon svg {
+.navbar-collapse .nav-social .nav-icon svg {
   transform: scale(0.6);
 }
-.navbar-collapse .mobile-nav-social .nav-icon:hover path {
+.navbar-collapse .nav-social .nav-icon:hover path {
   fill: var(--clr-accent);
 }
 .navbar-collapse .nav-language {
@@ -591,7 +591,8 @@ footer .copyright a {
   .navbar-collapse .navbar-nav .nav-link {
     font-size: 14px;
   }
-  .navbar-collapse .mobile-nav-social {
+  .navbar-collapse .nav-social {
+    margin-left: auto;
     margin-bottom: 0;
   }
   .navbar-collapse .nav-language {

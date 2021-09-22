@@ -345,7 +345,7 @@ button {
             }
         }
 
-        .mobile-nav-social {
+        .nav-social {
 
             margin-bottom: 1em;
             margin-left: 10px;
@@ -706,7 +706,7 @@ footer {
 
 @media only screen and ( min-width: 768px ) {
     
-    // NAVBAR
+// NAVBAR
 .navbar {
 
     &-dark {
@@ -806,8 +806,8 @@ footer {
             }
         }
 
-        .mobile-nav-social {
-
+        .nav-social {
+            margin-left: auto;
             margin-bottom: 0;
             .nav-icon {
                 svg {
