@@ -59,8 +59,8 @@ button {
 }
 
 .no-bg-shadow {
-  filter: drop-shadow(0px 60px 51px rgba(0, 0, 0, 0.1)) drop-shadow(0px 30.375px 22.2328px rgba(0, 0, 0, 0.0675)) drop-shadow(0px 12px 8.2875px rgba(0, 0, 0, 0.05)) drop-shadow(0px 2.625px 2.94844px rgba(0, 0, 0, 0.0325));
-  -webkit-filter: drop-shadow(0px 60px 51px rgba(0, 0, 0, 0.1)) drop-shadow(0px 30.375px 22.2328px rgba(0, 0, 0, 0.0675)) drop-shadow(0px 12px 8.2875px rgba(0, 0, 0, 0.05)) drop-shadow(0px 2.625px 2.94844px rgba(0, 0, 0, 0.0325));
+  filter: drop-shadow(0px 60px 51px rgba(0, 0, 0, 0.1)) drop-shadow(0px 30.375px 22.2328px rgba(0, 0, 0, 0.1675)) drop-shadow(0px 12px 8.2875px rgba(0, 0, 0, 0.05)) drop-shadow(0px 2.625px 2.94844px rgba(0, 0, 0, 0.1325));
+  -webkit-filter: drop-shadow(0px 60px 51px rgba(0, 0, 0, 0.1)) drop-shadow(0px 30.375px 22.2328px rgba(0, 0, 0, 0.1675)) drop-shadow(0px 12px 8.2875px rgba(0, 0, 0, 0.05)) drop-shadow(0px 2.625px 2.94844px rgba(0, 0, 0, 0.1325));
 }
 
 /*  SEARCH FORM OVERLAY */
@@ -217,7 +217,7 @@ html:not([data-scroll="0"]) .navbar-dark {
 }
 .navbar-collapse .navbar-nav .nav-link {
   color: var(--clr-light);
-  padding: 0.5em 0.7em !important;
+  padding: 0.2em 0.6em !important;
   display: inline-block;
   position: relative;
 }
@@ -582,13 +582,14 @@ footer .copyright a {
     margin-bottom: 0;
     transition: all 0.3s ease;
     display: block;
-    overflow-y: hidden;
     z-index: 1050;
+    overflow: visible;
   }
   .navbar-collapse .navbar-nav {
     margin: 0;
   }
   .navbar-collapse .navbar-nav .nav-link {
+    margin-left: 2rem;
     font-size: 14px;
   }
   .navbar-collapse .nav-social {
@@ -597,6 +598,44 @@ footer .copyright a {
   }
   .navbar-collapse .nav-language {
     font-size: 14px;
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+  }
+  .hero-text-container h1 {
+    font-size: 64px;
+    font-weight: bold;
+  }
+  .hero-text-container p {
+    font-size: 28px;
+  }
+  .hero-text-container button {
+    height: 50px;
+    width: 400px;
+  }
+  @keyframes animatedArrow {}
+
+  section h2 {
+    text-align: left;
+  }
+  section p {
+    font-size: 18px;
+    width: 80%;
+  }
+  section button {
+    float: left;
+    width: 50%;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  section .home-gallery-img {
+    width: 16.6667%;
+  }
+  section .home-gallery-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 63px rgba(0, 0, 0, 0.22), 0 0 37px rgba(0, 0, 0, 0.17), 0 0 20px rgba(0, 0, 0, 0.13), 0 0 10px rgba(0, 0, 0, 0.011), 0 0 5px rgba(0, 0, 0, 0.09), 0 0 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.1s ease-in;
   }
 }
 /* clears the 'X' from Internet Explorer */
